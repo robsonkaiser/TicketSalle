@@ -1,0 +1,47 @@
+<article class="event-card">
+
+  <!-- Imagem e data do evento -->
+  <div class="event-image-container">
+
+    <img
+      [src]="image"
+      [alt]="name"
+      class="event-image"
+    >
+
+    <!-- Data do evento -->
+    <span class="event-date">
+      {{ date }}
+    </span>
+
+  </div>
+
+  <!-- Informações do evento -->
+  <div class="event-content">
+
+    <h3>
+      {{ name }}
+    </h3>
+
+    <!-- Localização -->
+    <p class="event-location">
+      <span>●</span>
+      {{ location }}
+    </p>
+
+    <!-- Preço e botão -->
+    <div class="event-footer">
+
+      <div class="event-price">
+        <small>A partir de</small>
+        <strong>R$ {{ price }}</strong>
+      </div>
+
+      <button class="event-button">
+        Ver evento
+      </button>
+
+    </div>
+  </div>
+
+</article>

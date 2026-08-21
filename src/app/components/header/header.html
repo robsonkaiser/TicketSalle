@@ -1,0 +1,46 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <a href="/" class="logo">
+        TICKET<span>SALLE</span>
+      </a>
+
+      <!-- Botão hambúrguer -->
+      <button
+        class="menu-toggle"
+        type="button"
+        (click)="toggleMenu()"
+        [class.active]="menuOpen"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="menu" [class.active]="menuOpen">
+
+        <a href="#eventos" (click)="closeMenu()">
+          Eventos
+        </a>
+
+       <a href="#sobre" (click)="closeMenu()">
+          Sobre
+      </a>
+
+        <a href="#contato" (click)="closeMenu()">
+          Contato
+        </a>
+
+        <button class="btn-login">
+          Entrar
+        </button>
+
+      </div>
+
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,53 @@
+/* =================================================
+   SEÇÃO DE EVENTOS
+   ================================================= */
+
+.events-section {
+  padding: 100px 30px;
+  background: #09090b;
+}
+
+/* =================================================
+   CABEÇALHO DA SEÇÃO
+   ================================================= */
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Pequeno título acima do título principal */
+.section-heading > div > span {
+  color: #e879f9;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Título principal da seção */
+.section-heading h2 {
+  margin-top: 8px;
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+/* Descrição da seção */
+.section-heading p {
+  margin: 0;
+  color: #71717a;
+}
+
+/* =================================================
+   RESPONSIVIDADE
+   ================================================= */
+
+@media (max-width: 768px) {
+  .events-section {
+    padding: 80px 20px;
+  }
+}

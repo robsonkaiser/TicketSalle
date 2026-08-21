@@ -1,0 +1,36 @@
+<section id="eventos" class="events-section">
+  <div class="container">
+
+    <!-- Cabeçalho da seção -->
+    <div class="section-heading">
+      <div>
+        <span>EVENTOS</span>
+        <h2>Próximos eventos</h2>
+      </div>
+
+      <p>Encontre seu próximo rolê.</p>
+    </div>
+
+    <!-- Lista de eventos -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+    @for (event of events; track event.name) {
+
+        
+
+        <app-event-card
+            [name]="event.name"
+            [image]="event.image"
+            [date]="event.date"
+            [location]="event.location"
+            [price]="event.price"
+        ></app-event-card>
+
+      
+
+    }
+
+    </div>
+    </div>
+    
+</section>

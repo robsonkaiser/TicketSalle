@@ -1,0 +1,217 @@
+/* =================================================
+   HERO
+   ================================================= */
+
+.hero {
+
+    min-height: 680px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 120px 30px;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(192, 38, 211, 0.25),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            110deg,
+            #09090b,
+            #170b1d
+        );
+
+}
+
+
+/* =================================================
+   CONTEÚDO
+   ================================================= */
+
+.hero-content {
+
+    max-width: 800px;
+
+}
+
+
+/* =================================================
+   TAG
+   ================================================= */
+
+.hero-tag {
+
+    color: #e879f9;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =================================================
+   TÍTULO
+   ================================================= */
+
+.hero h1 {
+
+    margin: 20px 0;
+
+    font-size: clamp(
+        3.5rem,
+        8vw,
+        6.5rem
+    );
+
+    line-height: 0.92;
+
+    letter-spacing: -5px;
+
+    font-weight: 900;
+    color: #71717a;
+
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #e879f9;
+
+}
+
+
+/* =================================================
+   DESCRIÇÃO
+   ================================================= */
+
+.hero p {
+
+    max-width: 550px;
+
+    margin-bottom: 35px;
+
+    color: #a1a1aa;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* =================================================
+   BOTÃO
+   ================================================= */
+
+.btn-main {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 25px;
+
+    border-radius: 7px;
+
+    background: #c026d3;
+
+    color: white;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+
+}
+
+
+.btn-main:hover {
+
+    background: #a21caf;
+
+    transform: translateY(-2px);
+
+}
+
+
+.btn-main span {
+
+    font-size: 1.2rem;
+
+}
+
+/* =================================================
+   RESPONSIVIDADE
+   ================================================= */
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 650px;
+        padding: 140px 20px 80px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        margin: 18px 0;
+        font-size: clamp(3rem, 13vw, 4.5rem);
+        letter-spacing: -3px;
+    }
+
+    .hero p {
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .btn-main {
+        padding: 13px 20px;
+    }
+}
+
+/* =================================================
+   CELULAR
+   ================================================= */
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 600px;
+        padding: 130px 20px 70px;
+    }
+
+    .hero-tag {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 14vw, 4rem);
+        letter-spacing: -2.5px;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .btn-main {
+        width: 100%;
+        justify-content: center;
+    }
+}

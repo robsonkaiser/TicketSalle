@@ -1,0 +1,86 @@
+<section class="event-details">
+
+  <div class="container">
+
+    <!-- Informações principais do evento -->
+    <div class="event-info">
+
+      <!-- Imagem do evento -->
+      <div class="event-image">
+        <img
+          [src]="event.image"
+          [alt]="event.name"
+        >
+      </div>
+
+      <!-- Informações -->
+      <div class="event-content">
+
+        <span class="event-category">
+          {{ event.category }}
+        </span>
+
+        <h1>{{ event.name }}</h1>
+
+        <p class="event-description">
+          {{ event.description }}
+        </p>
+
+        <!-- Data e localização -->
+        <div class="event-meta">
+
+          <div>
+            <span>📅</span>
+
+            <div>
+              <strong>{{ event.date }}</strong>
+              <small>{{ event.time }}</small>
+            </div>
+          </div>
+
+          <div>
+            <span>📍</span>
+
+            <div>
+              <strong>{{ event.location }}</strong>
+              <small>{{ event.venue }}</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Compra -->
+        <div class="event-purchase">
+
+          <div>
+            <small>A partir de</small>
+
+            <strong>
+              R$ {{ event.price.toFixed(2).replace('.', ',') }}
+            </strong>
+          </div>
+
+          <button>
+            Comprar ingresso
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Descrição completa -->
+    <div class="event-about">
+
+      <h2>Sobre o evento</h2>
+
+      <p>
+        {{ event.description }}
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
